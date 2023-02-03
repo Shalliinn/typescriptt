@@ -1,0 +1,26 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "Spi@4300",
+    "database": "Task1",
+    "synchronize": true,
+    "logging": true,
+    "migrationsRun": true,
+    "entities": [
+        "./dist/entities/*.js"
+      ],
+      "migrations": [
+        "./dist/migration/*js"
+      ],
+      "subscribers": [
+        "./dist/subscriber/*.js"
+      ],
+      "cli": {
+        "entitiesDir": "./src/entity",
+        "migrationsDir": "./src/migration",
+        "subscribersDir": "./src/subscriber"
+      }
+      
+  }
